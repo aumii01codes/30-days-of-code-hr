@@ -1,0 +1,27 @@
+//Day 8: Dictionaries and Maps
+
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner read= new Scanner (System.in);
+        int n= read.nextInt();
+        read.nextLine();
+        
+        HashMap<String, Integer> hm= new HashMap <>();
+        for (int i = 0; i < n; i++) {
+            String name= read.next();
+            int phoneNumber= read.nextInt();
+            hm.put(name, phoneNumber);
+        }
+
+        while(read.hasNext()){
+            String name= read.next();
+            if(hm.containsKey(name)){
+                System.out.println(name + "=" +hm.get(name));
+            } else {
+                System.out.println("Not found");
+            }
+        }
+        read.close();
+    }
+}

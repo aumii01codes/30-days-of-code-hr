@@ -1,0 +1,20 @@
+//Day 6: Let's Review
+
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner read= new Scanner(System.in);
+        int t= read.nextInt();
+        read.nextLine();
+        for(int i=0; i<t; i++){
+            String str= read.nextLine();
+            int len = str.length();
+            String even_str="";
+            String odd_str="";
+            for (int ch=0; ch<len; ch++){
+                if (ch%2==0) even_str += str.charAt(ch);
+                else odd_str += str.charAt(ch);
+            } System.out.println(even_str + " " + odd_str);
+        } read.close();
+    }
+}
