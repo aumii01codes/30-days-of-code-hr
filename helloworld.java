@@ -1,4 +1,4 @@
-//DAY 0: Hello World
+//Day 0: Hello World
 
 import java.util.*;
 public class helloworld {
